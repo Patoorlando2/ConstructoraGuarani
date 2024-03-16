@@ -1,0 +1,292 @@
+@import url(icomoon/style.css);
+/*index.php*/
+
+img.scale-with-grid.stylelogo{
+	width:200px;
+	height: 60px;
+	border-radius: 60px;
+}
+img.d-block.w-100{
+	height:600px;
+}
+.h5_carousel{
+	font-size: 35px;
+	font-family: 'Raleway', bold;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: 600;
+}
+.p_carousel{
+	font-size: /*25px*/1rem;
+	font-family: 'Raleway', bold;
+	color: white;
+	text-shadow: 1px 1px 1px #000;
+	font-weight: 600;
+}
+div.container-h2-nosotros{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content:center;
+	margin: 15px;
+}
+h2.items-h2-nosotros{
+	font-family: 'Lato', sans-serif;
+	color:black;
+	position: relative;
+	animation-name: h2-nosotros;
+	animation-duration: 4s;
+	border-bottom: 4px solid transparent; /* Establece un borde inferior transparente */
+    transition: border-bottom 0.3s ease; /* Agrega una transición suave de 0.3 segundos al borde inferior */
+	/*opacity:0;
+	transition: opacity 1s, transform 1s;
+	transform: translateY(20px);*/
+}
+h2.items-h2-nosotros:hover{
+	font-family: 'Lato', sans-serif;
+	color:black;
+	position: relative;
+	animation-name: h2-nosotros;
+	animation-duration: 4s;
+	border-bottom: 4px solid #5490f4;
+}
+@keyframes h2-nosotros{
+	0% {
+	  opacity:0;
+	  transform: translate(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translate(0);
+	}
+  }
+div.container-first-section{
+	display: flex;
+	width: 100%;
+	flex-wrap:wrap;
+}
+
+/*ANIMATION IMAGE*/
+div.image-nosotros {
+	flex: 1;
+	max-width: 100%;
+	max-height: 500px;
+	width: 100%;
+	height: auto;
+	position: relative;
+	animation-name: animation-image;
+	animation-duration: 4s;
+}
+@keyframes animation-image{
+	0% {
+	  left: -120%;
+	}
+	100% {
+	  left: 0px;
+	}
+  }
+/*ANIMATION IMAGE*/
+.image-nosotros img {
+	height: 400px;
+	aspect-ratio: 16 / 10;
+	margin: 20px;
+}
+
+div.texto {
+	flex: 1;
+	margin:10px;
+	padding:10px;
+	justify-content: justify;
+	position: relative;
+	animation-name: animation-text;
+	animation-duration: 4s;
+}
+@keyframes animation-text{
+	0% {
+	  left: 120%;
+	}
+	100% {
+	  left: 0px;
+	}
+  }
+.texto p#texto_p{
+	width:60%;
+	font-size: 18px !important;
+	font-family: 'Raleway', sans-serif;
+	color:black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*SERVICIOS.HTML*/
+/*h2.first_banner{
+	color: white;
+	font-family:'Raleway', bold;
+	text-shadow: 5px 3px 2px black;
+	opacity: 0.8;
+	position: relative;
+	animation-name: h2-general;
+	animation-duration: 2.5s;
+}*/
+.animation{
+	position: relative;
+	animation-name: h2-general;
+	animation-duration: 2.5s;
+}
+@keyframes h2-general{
+	0% {
+		left: -120%;
+	  }
+	  100% {
+		left: 0%;
+	  }
+}
+#style_h2{
+	margin-top: -300px;
+}
+.imgNumber{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+img.img_edificando_sueños{
+	width: 100%;
+	height:600px;
+}
+
+/*OBRAS REALIZADAS*/
+img.img-obras-realizadas{
+	width: 100%;
+	height:600px;
+}
+.container-juncal{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin-left: 10%;
+	margin-right:10%;
+}
+.container-juncal img{
+	/*flex: 0 0 calc(25% - 10px); Establece el ancho deseado por imagen (ajusta según sea necesario) */
+	margin: 5px;
+	width: 20%;
+	/*border-radius: 20px;*/
+}
+
+h2.h2-obra-juncal{
+	color: black;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+}
+/*.icon-whatsapp:before {
+	content: "\ea93";
+	background-color:green;
+  }*/
+  .fa-whatsapp:before{
+	content: "\f232";
+	color:#25d366;
+	font-size: 50px;
+	
+  }
+  .whatsapp_float{
+		position:fixed;
+		width:60px;
+		height:60px;
+		bottom:40px;
+		right:40px;
+		/*background-color:#25d366;*/
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:30px;
+		/*box-shadow: 2px 2px 3px #999;*/
+		z-index:100;
+  }
+
+@media only screen and (min-width: 1920px) {
+	img.img-obras-realizadas{
+		height: 800px;
+	}
+	.texto p#texto_p{
+		font-size: 30px;
+	}
+	img.d-block.w-100{
+		height:800px;
+	}
+	.image-nosotros img {
+		aspect-ratio: 2 / 1;
+		margin-left: 100px;
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.texto p#texto_p{
+		width: 90%;
+	}
+	img.img-obras-realizadas{
+		height: 400px;
+	}
+	img.img_edificando_sueños{
+		height: 400px;
+	}
+	img.scale-with-grid.stylelogo{
+		margin-top: -20px;
+	}
+	div.container-first-section{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		flex-wrap:wrap;
+	}
+	div.image-nosotros {
+		animation-name: none;
+	}
+	.style_oficina{
+		margin-left: -30px;
+	}
+	.image-nosotros img{
+		height: 400px;
+		aspect-ratio: 16 / 10;
+		margin-top: 3%;
+
+	}
+	div.texto{
+		animation-name: none;
+	}
+	.first_banner{
+		display: none;
+	}
+	.carousel.slide{
+		display: none;
+	}
+	.image-nosotros img{
+		width: 100%;
+		height: auto;
+		aspect-ratio: none;
+		margin: none;
+	}
+	p.style_r_oficina{
+		margin-left: -30px;
+	}
+
+	
+}
+@media only screen and (max-width: 768px) {
+	.container-juncal{
+		flex-direction: column;
+		justify-content:center;
+		/*position: relative;*/
+	}
+	.container-juncal img {
+		/*position: absolute;*/
+		margin-left: 35%;
+
+	}
+}
+
+.texto{
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+}
